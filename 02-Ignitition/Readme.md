@@ -32,3 +32,15 @@
 - if you have `package.json` or `package-lock.json` , you can recreate the `node-modules` by using `npm install`. This can create Security issues as well. So better to keep it in `.gitignore`.
 
 - Whatever we can re-generate don't put it on github !
+
+# Building / Ingniting our React App
+
+- `npx parcel index.html`
+
+`npm` means calling the command
+`npx` means executing the package
+
+- `npm install react`
+- `npm install react-dom`
+
+- `<script type='modules' src=app.js></script>`

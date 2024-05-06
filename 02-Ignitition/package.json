@@ -1,0 +1,20 @@
+{
+  "name": "02-ignitition",
+  "version": "1.0.0",
+  "description": "Igniting / Starting React Production app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "start",
+    "React",
+    "production",
+    "app"
+  ],
+  "author": "Akshay Parab",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
