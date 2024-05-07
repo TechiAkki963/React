@@ -44,3 +44,16 @@
 - `npm install react-dom`
 
 - `<script type='modules' src=app.js></script>`
+
+- To build a PRODUCTION Build - (if you already have dist folder in directory it needs to be deleted )
+  `npx parcel build index.html`
+
+  after running `npx parcel build index.html` you may get error
+
+  ```
+   > 5 | "main": "app.js",
+
+  > | ^^^^^^^^ Did you mean "app.html"?
+  ```
+
+  to resolve this go to `package.json` and remove the `main: app.js` line .
