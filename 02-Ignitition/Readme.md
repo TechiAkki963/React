@@ -57,3 +57,20 @@
   ```
 
   to resolve this go to `package.json` and remove the `main: app.js` line .
+
+# BrowsersList
+
+BrowserList for browser compatibility
+
+https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
+
+need to make changes in package.json file
+
+```
+
+"browserslist": [
+      "last 2 versions"
+]
+
+``
+```

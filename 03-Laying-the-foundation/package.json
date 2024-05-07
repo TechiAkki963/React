@@ -1,15 +1,16 @@
 {
-  "name": "02-ignitition",
+  "name": "03-laying-the-foundation",
   "version": "1.0.0",
-  "description": "Igniting / Starting React Production app",
+  "description": "React Learn",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "keywords": [
-    "start",
-    "React",
-    "production",
-    "app"
+    "laying",
+    "the",
+    "foundation"
   ],
   "author": "Akshay Parab",
   "license": "ISC",
@@ -21,7 +22,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "browerslist": [
+  "browserslist": [
     "last 2 versions"
   ]
 }
