@@ -41,3 +41,34 @@
   - `Babel` which is present in `Parcel`, convert the `JSX` to `React.createElement` then the `React.createElement` is transpiled to `JS-Object`and the browser to `HTML`
 
   - ## Babel - https://babeljs.io/
+
+  # REACT Components
+
+    <ul>
+    <li>Classbased Components - OLD</li>
+    <li>Functional component - ** NEW **</li>
+    </ul>
+
+  ## Functional Component
+
+```React
+
+
+  const HeadingComponent = () => {
+  return(
+  <div id="container">
+  <h1 className="heading>Hello World from Functional Component</h1>
+  </div>
+       )
+  };
+```
+
+- the varaible name / component Name must be starting from Capital Letter `HeadingComponent`.
+
+### to render the functional component
+
+```
+root.render(<HeadingComponent />);
+```
+
+- the render the name should be between `< />`
