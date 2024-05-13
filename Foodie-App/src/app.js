@@ -1382,6 +1382,7 @@ const RestaurantCard = (props) => {
     costForTwo,
     sla: { deliveryTime },
   } = resData?.info;
+
   return (
     <div className="res-card">
       <img
