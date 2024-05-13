@@ -1,19 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-// Header
-//      Logo
-//      Nav-items
-// Body
-//     Search
-//     Restaurant Container
-//     Restaurant Card
-// Footer
-//     Copyright
-//     Links
-//     Address
-//     Contacts
-//
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const resList = [
   {
@@ -1349,73 +1337,6 @@ const resList = [
     },
   },
 ];
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://cdn.dribbble.com/users/5960208/screenshots/16398589/i_will_2_modern_minimalist_logo_design_within_12_hrs__9__4x.jpg"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-const RestaurantCard = (props) => {
-  const { resData } = props;
-
-  const {
-    cloudinaryImageId,
-    name,
-    cuisines,
-    avgRating,
-    costForTwo,
-    sla: { deliveryTime },
-  } = resData?.info;
-
-  return (
-    <div className="res-card">
-      <img
-        className="res-logo"
-        src={
-          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
-          cloudinaryImageId
-        }
-        alt=""
-      />
-      <h3>{name}</h3>
-      <p>{cuisines.join(" , ")}</p>
-      <p>{avgRating} stars</p>
-      <p>{costForTwo}</p>
-      <p>{deliveryTime} Minutes</p>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-container">
-        {/* <RestaurantCard resData={resList[11]} /> */}
-
-        {resList.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );
-};
 
 const AppLayout = () => {
   return (
