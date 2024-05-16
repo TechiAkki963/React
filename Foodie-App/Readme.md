@@ -16,3 +16,15 @@
 // Address
 // Contacts
 //
+
+// There are 2 types of export import
+
+- In Direct Import/Export
+
+export default ComponentName
+import ComponentName from /Path
+
+- In Named Export
+
+export const Component;
+import {Component} from /Path
