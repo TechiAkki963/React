@@ -28,3 +28,12 @@ import ComponentName from /Path
 
 export const Component;
 import {Component} from /Path
+
+# React Hooks
+
+(Normal JS utility function)
+
+- useState()
+- useEffect()
+
+Whenever a state variable is update react re-render

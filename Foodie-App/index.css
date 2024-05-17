@@ -30,6 +30,17 @@
 .search {
   padding: 10px;
 }
+/* filter - Top Rated Restaurant */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.filter-btn {
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
 
 .res-container {
   display: flex;
