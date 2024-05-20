@@ -254,7 +254,7 @@ const resList = [
       areaName: "Panvel City",
       costForTwo: "₹300 for two",
       cuisines: ["Pizzas", "Pastas", "Fast Food", "Snacks", "Beverages"],
-      avgRating: 4.2,
+      avgRating: 3.9,
       parentId: "11633",
       avgRatingString: "4.2",
       totalRatingsString: "100+",
