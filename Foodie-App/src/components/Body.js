@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import resList from "../utilities/mockData";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   // How to use State Variable
@@ -81,7 +82,32 @@ const Body = () => {
   //   },
   // ];
 
-  return (
+  // useEffect(() => {
+  //   // console.log("UseEffect");
+  //   fetchData();
+  // }, []);
+
+  // const fetchData = async () => {
+  //   const data = await fetch();
+
+  //   const json = await data.json();
+
+  //   console.log(json);
+  //   setListOfRestaurant();
+  // };
+
+  // json?.data?.sucess?.cards[4]?.gridWidget?.infoWithStyle?.restaurants
+  // ?.gridWidget?.gridElements?.infoWithStyle
+  //       ?.restaurants,
+
+  // Conditional rendering
+  // if (listOfRestaurants.length === 0) {
+  //   return <Shimmer />;
+  // }
+
+  return listOfRestaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
